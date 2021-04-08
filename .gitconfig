@@ -3,3 +3,5 @@
 [user]
 	email = tom.quinn@teeque.co.uk
 	name = Tom Quinn
+[pull]
+	ff = only
