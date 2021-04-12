@@ -12,12 +12,12 @@ syntax on
 
 set ruler
 set title
-set number
+set relativenumber
 
 " Indent settings
 set autoindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 " Use system clipboard by default
 set clipboard=unnamedplus
