@@ -10,7 +10,8 @@ alias vi='vim '
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-PS1='\[\e[38;5;141m\][\u@\h]\[\e[00m\]:\[\e[1;32m\]\w>\[\e[00m\]$(__git_ps1)\n\\$ '
+
+PS1='┌─\[\e[38;5;141m\][\u@\h]\[\e[00m\]:\[\e[1;32m\]\w>\[\e[00m\]$(__git_ps1)\n└─\$ '
 
 # If git-prompt.sh exists, source it
 test -f /usr/share/git/git-prompt.sh && source /usr/share/git/git-prompt.sh
