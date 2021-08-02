@@ -9,6 +9,7 @@ alias ls='ls -l --color=auto'
 alias vi='vim '
 
 export GIT_PS1_SHOWDIRTYSTATE=1
+export EDITOR=vim
 
 PS1='\[┌─\]\[\e[38;5;141m\][\u@\h]\[\e[00m\]:\[\e[1;32m\]\w>\[\e[00m\]\[$(__git_ps1)\]\n\[└─\]\$ '
 
