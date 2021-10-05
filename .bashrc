@@ -8,6 +8,7 @@
 #Aliases
 alias ls='ls -l --color=auto'
 alias vi='vim '
+alias xclip='xclip -selection c '
 
 #Variables
 export GIT_PS1_SHOWDIRTYSTATE=1
