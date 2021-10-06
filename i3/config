@@ -15,6 +15,9 @@ bindsym $mod+d exec "rofi -modi drun -show drun -show-icons"
 #start firefox
 bindsym $mod+x exec "firefox"
 
+#take screenshot (to clipboard)
+bindsym $mod+Shift+s exec "import png:- | xclip -selection c -t image/png"
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
