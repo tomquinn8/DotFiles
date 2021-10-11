@@ -9,6 +9,7 @@
 alias ls='ls -l --color=auto'
 alias vi='vim '
 alias xclip='xclip -selection c '
+test -f /usr/bin/bat && alias cat=bat #If bat is installed, alias cat to it
 
 #Variables
 export GIT_PS1_SHOWDIRTYSTATE=1
