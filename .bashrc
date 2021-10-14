@@ -22,7 +22,7 @@ HISTSIZE=1000000 #Very large history size
 HISTFILESIZE=1000000 #Very large history file size
 
 #Prompt
-PS1='\[┌─\]\[\e[38;5;141m\][\u@\h]\[\e[00m\]:\[\e[1;32m\]\w>\[\e[00m\]\[$(__git_ps1)\]\n\[└─\]\$ '
+PS1=$'\[\xe2\x94\]\x8c\[\xe2\x94\]\x80\[\e[38;5;141m\][\u@\h]\[\e[00m\]:\[\e[1;32m\]\w>\[\e[00m\]\[$(__git_ps1)\]\n\[\xe2\x94\]\x94\[\xe2\x94\]\x80\$ '
 # If git-prompt.sh exists, source it
 test -f /usr/share/git/git-prompt.sh && source /usr/share/git/git-prompt.sh
 
