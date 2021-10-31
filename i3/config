@@ -3,6 +3,12 @@ set $mod Mod4
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Open windows called 'scratchpad' in a scratchpad
+for_window [instance="scratchpad"] move window to scratchpad, scratchpad show
+
+# Show/Hide scratchpad
+bindsym $mod+minus scratchpad show
+
 # start a terminal
 bindsym $mod+Return exec alacritty
 
@@ -12,17 +18,14 @@ bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
 bindsym $mod+d exec "rofi -modi drun -show drun -show-icons"
 
-#start firefox
+# start firefox
 bindsym $mod+x exec "firefox"
 
-#take screenshot (to clipboard)
+# take screenshot (to clipboard)
 bindsym $mod+Shift+s exec "import png:- | xclip -selection c -t image/png"
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+# start keepassxc in scratchpad
+bindsym $mod+k exec --no-startup-id keepassxc -name scratchpad
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
