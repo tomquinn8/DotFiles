@@ -48,3 +48,4 @@ set nobackup
 
 "Status line
 set laststatus=2
+set statusline+=%F
