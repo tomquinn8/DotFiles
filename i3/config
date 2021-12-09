@@ -173,9 +173,6 @@ exec --no-startup-id picom -b
 #Run Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-#run startup apps in correct workspaces
-#exec --no-startup-id i3-msg 'workspace 1; exec firefox'
-#exec --no-startup-id i3-msg 'workspace 2; exec thunderbird'
-#exec --no-startup-id i3-msg 'workspace 1; exec alacritty'
-
+#Mount OneDrive
+exec --no-startup-id rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive/
 
