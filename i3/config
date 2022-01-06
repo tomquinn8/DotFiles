@@ -10,7 +10,7 @@ for_window [instance="scratchpad"] move window to scratchpad, scratchpad show
 bindsym $mod+minus scratchpad show
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
