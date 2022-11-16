@@ -167,8 +167,8 @@ gaps inner 15
 gaps outer -7
 for_window [class="^.*"] border pixel 1
 
-#run picom
-exec --no-startup-id picom -b
+#Run nm-applet
+exec --no-startup-id nm-applet
 
 #Run Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh

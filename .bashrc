@@ -6,10 +6,18 @@
 [[ $- != *i* ]] && return
 
 #Aliases
-alias ls='ls -l --color=auto'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ls='ls -lh --color=auto'
 alias vi='vim '
 alias xclip='xclip -selection c '
 test -f /usr/bin/bat && alias cat=bat #If bat is installed, alias cat to it
+
+#Path
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
 
 #Variables
 export GIT_PS1_SHOWDIRTYSTATE=1
